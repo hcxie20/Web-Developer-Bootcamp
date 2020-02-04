@@ -55,7 +55,9 @@ use label to connect:
 
 ### c). check box, select box, and radio
 #### i. check box:
+```
 <input type="radio">
+
 <p>
     Do you prefer cats or dogs?
     <form>
@@ -66,8 +68,17 @@ use label to connect:
         <button>Submit</button>
     </form>
 </p>
-
-#### ii. 
-
+```
+#### ii. select box
+```
+<select name="color">
+    <option value="1">red</option>
+    <option value="2">yellow</option>
+</select>
+```
+To have a required select, the first option need to set value to empty
+```
+<option value="">1</option>
+```
 
 
