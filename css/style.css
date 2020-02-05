@@ -1,0 +1,14 @@
+h1 {
+    color: #1f9432;
+    /* border-color: black;
+    border-width: 5px;
+    border-style: dashed; */
+    border: 5px dashed black;
+}
+
+body {
+    background: #ac8e91;
+    /* background: url(https://previews.123rf.com/images/julioricco/julioricco1906/julioricco190600216/125582444-brazilian-pine-or-pinus-radiata-background-bare-wood-untreated-.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}

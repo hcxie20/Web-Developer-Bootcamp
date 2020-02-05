@@ -81,4 +81,12 @@ To have a required select, the first option need to set value to empty
 <option value="">1</option>
 ```
 
-
+# 2. CSS
+```
+*: select everything
+li a {}: all a tags inside a li tags
+h4 + ul {}: uls ajacent to h4
+a[href="www.google.com"]
+ul:nth-of-type(3){}: 3rh ul tag in EACH GROUP
+li:nth-of-type(even){}
+```
