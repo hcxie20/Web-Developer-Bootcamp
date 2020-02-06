@@ -82,6 +82,9 @@ To have a required select, the first option need to set value to empty
 ```
 
 # 2. CSS
+
+## a. basic
+
 ```
 *: select everything
 li a {}: all a tags inside a li tags
@@ -90,3 +93,23 @@ a[href="www.google.com"]
 ul:nth-of-type(3){}: 3rh ul tag in EACH GROUP
 li:nth-of-type(even){}
 ```
+
+## b. font
+```
+font-family: Arial
+```
+```
+font-size: 10px
+font-size: 2.0em // twice the size of current font size
+```
+Can set font size for body a certain number, and set em for all other fonts.
+
+```
+font-weight: bold(800px)
+line_height: 1.5    # intervals between lines
+text-align: right/center/left;
+```
+```
+text-decorationa: underline/line-through
+```
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <style type="text/css">
+        table{
+            margin: auto;
+        }
+        td{
+            width: 100px;
+            height: 100px;
+            float:left;
+            padding: 0;
+        }
+        tr{
+            padding: 0;
+        }
+        .horizontal{
+            border-top: 1px black solid;
+            border-bottom: 1px black solid;
+        }
+        .vertical{
+            border-left: 1px black solid;
+            border-right: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td></td>
+            <td class="vertical"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="horizontal"></td>
+            <td class="vertical horizontal"></td>
+            <td class="horizontal"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="vertical"></td>
+            <td></td>
+        </tr>
+    </table>
+</body>

@@ -1,0 +1,18 @@
+body {
+    border: 20px #bdc7c3 solid;
+    padding: 20px;
+    max-width: 700px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    font-family: Arial;
+}
+p.quote{
+    border-left: 15px #f1f1f1 solid;
+    padding-left: 10px;
+}
+div.date{
+    letter-spacing: 2px;
+    color: #3498db;
+    text-transform: uppercase;
+}
