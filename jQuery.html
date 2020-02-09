@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="jQuery_min.js"></script>
+</head>
+<body>
+    <h1>jQuery</h1>
+    <ul>
+        <li>asdfsd</li>
+        <li>asdfsd</li>
+        <li>asdfsd</li>
+    </ul>
+    <div>Div 1</div>
+    <div class="highlight">Div 2</div>
+    <div id="third">Div 3</div>
+    <div class="highlight">Div 4</div>
+
+    <script>
+        $("div").css("background", "purple")
+        $("div.highlight").css("width", "200px")
+        $("#third").css("border", "orange 2px solid")
+        $("div:first-of-type").css("color", "white")
+    </script>
+</body>
+</html>
