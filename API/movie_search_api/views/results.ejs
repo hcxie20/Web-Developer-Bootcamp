@@ -1,0 +1,19 @@
+<h1>Search Results</h1>
+<!-- <% console.log(data)%> -->
+<% if (data["Response"]==="False"){%>
+    <li>Nothing found</li>
+<% } else { %> 
+    <%data["Search"].forEach(function(movie){ %>
+        <li>
+            <div class="movieContainer">
+                <div class="movieTitle">
+                    <span class="movieName"><%= movie["Title"]%></span> - 
+                    <span class="movieYear"><%=  movie["Year"]%></span>
+                </div>
+                <div class="moviePoster">
+                    <img src=<%= movie["Poster"] %> >
+                </div>
+            </div>
+        </li>
+    <% }) %> 
+<% } %> 
