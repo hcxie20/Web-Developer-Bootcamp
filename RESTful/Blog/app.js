@@ -28,8 +28,12 @@ var Blog = mongoose.model("Blog", blogSchema)
 //     body: "Dolor id do labore ullamco ipsum. Culpa magna fugiat Lorem veniam aute culpa laboris cillum. Eiusmod irure cupidatat laboris culpa ex consectetur. Proident culpa dolore magna non fugiat aliqua elit. Labore minim non officia quis pariatur elit est elit excepteur."
 // })
 
+app.get("/", function(req, res){
+    res.redirect("blogs")
+})
+
 app.get("/blogs", function(req, res){
-    res.render("index")
+    res.render("index", {blogs: mongoose.blogs.find({})})
 })
 
 app.listen(3000, function(){
