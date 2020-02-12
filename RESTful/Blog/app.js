@@ -33,7 +33,28 @@ app.get("/", function(req, res){
 })
 
 app.get("/blogs", function(req, res){
-    res.render("index", {blogs: mongoose.blogs.find({})})
+    Blog.find({}, function(err, blogs){
+        if(err){
+            console.log(err)
+            res.send("Error")
+        } else {
+            res.render("index", {blogs: blogs})
+        }
+    })
+})
+
+app.get("/blogs/new", function(req, res){
+    res.render("new")
+})
+
+app.post("/blogs", function(req, res){
+    Blog.create(req.body.blog, function(err, newBlog){
+        if(err){
+            console.log(err)
+        } else {
+            res.redirect("/blogs")
+        }
+    })
 })
 
 app.listen(3000, function(){
